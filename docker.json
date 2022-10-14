@@ -1,0 +1,31 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "description": [
+        "Docker preset used by PleaseStopAsking"
+    ],
+    "extends": [
+        "github>pleasestopasking/renovate:base"
+    ],
+    "regexManagers": [
+        {
+            "fileMatch": [
+                "Dockerfile"
+            ],
+            "matchStrings": [
+                "# renovate: datasource=(?<datasource>\\S+) depName=(?<depName>\\S+)( versioning=(?<versioning>.*?))?\nARG .*?_VERSION=(?<currentValue>.*)"
+            ]
+        }
+    ],
+    "packageRules": [
+        {
+            "description": "Automerge docker patches",
+            "matchDatasources": [
+                "docker"
+            ],
+            "matchUpdateTypes": [
+                "patch"
+            ],
+            "automerge": true
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "description": [
+        "Base preset used by PleaseStopAsking"
+    ],
+    "extends": [
+        "config:base"
+    ],
+    "packageRules": [
+        {
+            "description": "Strip v prefix from versions",
+            "groupName": "version prefix",
+            "matchDatasources": [
+                "github-releases"
+            ],
+            "extractVersion": "^v(?<version>.*)$"
+        },
+        {
+            "description": "Semantic commits for patch updates",
+            "matchUpdateTypes": [
+                "patch"
+            ],
+            "semanticCommitType": "ci",
+            "semanticCommitScope": "patch",
+            "automerge": false
+        },
+        {
+            "description": "Semantic commits for minor updates",
+            "matchUpdateTypes": [
+                "minor"
+            ],
+            "semanticCommitType": "ci",
+            "semanticCommitScope": "minor",
+            "automerge": false
+        },
+        {
+            "description": "Semantic commits for major updates",
+            "matchUpdateTypes": [
+                "major"
+            ],
+            "semanticCommitType": "ci",
+            "semanticCommitScope": "major",
+            "automerge": false
+        }
+    ]
+}
