@@ -23,7 +23,7 @@
             ],
             "semanticCommitType": "ci",
             "semanticCommitScope": "patch",
-            "automerge": true
+            "automerge": false
         },
         {
             "description": "Semantic commits for minor updates",
