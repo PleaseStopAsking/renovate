@@ -15,17 +15,5 @@
                 "# renovate: datasource=(?<datasource>\\S+) depName=(?<depName>\\S+)( versioning=(?<versioning>.*?))?\nARG .*?_VERSION=(?<currentValue>.*)"
             ]
         }
-    ],
-    "packageRules": [
-        {
-            "description": "Automerge docker patches",
-            "matchDatasources": [
-                "docker"
-            ],
-            "matchUpdateTypes": [
-                "patch"
-            ],
-            "automerge": true
-        }
     ]
 }
