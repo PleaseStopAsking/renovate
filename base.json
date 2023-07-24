@@ -21,7 +21,6 @@
             "matchUpdateTypes": [
                 "patch"
             ],
-            "semanticCommitType": "ci",
             "semanticCommitScope": "patch",
             "automerge": true
         },
@@ -30,7 +29,6 @@
             "matchUpdateTypes": [
                 "minor"
             ],
-            "semanticCommitType": "ci",
             "semanticCommitScope": "minor",
             "automerge": false
         },
@@ -39,7 +37,6 @@
             "matchUpdateTypes": [
                 "major"
             ],
-            "semanticCommitType": "ci",
             "semanticCommitScope": "major",
             "automerge": false
         }
