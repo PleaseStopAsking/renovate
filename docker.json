@@ -9,7 +9,8 @@
     "regexManagers": [
         {
             "fileMatch": [
-                "Dockerfile"
+                "Dockerfile",
+                "dockerfile"
             ],
             "matchStrings": [
                 "# renovate: datasource=(?<datasource>\\S+) depName=(?<depName>\\S+)( versioning=(?<versioning>.*?))?\nARG .*?_VERSION=(?<currentValue>.*)"
