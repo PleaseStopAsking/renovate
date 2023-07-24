@@ -30,7 +30,7 @@
                 "minor"
             ],
             "semanticCommitScope": "minor",
-            "automerge": false
+            "automerge": true
         },
         {
             "description": "Semantic commits for major updates",
